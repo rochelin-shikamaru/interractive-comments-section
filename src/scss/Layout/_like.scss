@@ -1,0 +1,18 @@
+.like{
+    width: 33px;
+    height: 80px;
+   // border: 1px solid red;
+    border-radius: 7px;
+    margin-right: 20px;
+    @include flexbox ($justify: space-between);
+    flex-direction: column;
+    background-color: $VeryLightGray;
+
+    &__increment{
+        cursor: pointer;
+    }
+    p{
+        color: $Moderateblue;
+        font-weight: $font-bold;
+    }
+}

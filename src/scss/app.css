@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+.like {
+  width: 33px;
+  height: 80px;
+  border-radius: 7px;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f5f6fa;
+}
+
+.like__increment {
+  cursor: pointer;
+}
+
+.like p {
+  color: #5457b6;
+  font-weight: 700;
+}
+
+.profile {
+  width: 100%;
+}
+
+.profile__img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__img__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__img__information .username {
+  display: inline-block;
+  font-weight: 700;
+  margin-inline: 10px;
+  color: #324152;
+}
+
+.profile__img__information .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile__img__information .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile__img__information .timePost {
+  font-weight: 400;
+  color: #67727e;
+}
+
+.profile__img__reply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5457b6;
+  font-weight: 700;
+  width: 67px;
+  cursor: pointer;
+}
+
+.profile .content {
+  color: #67727e;
+  margin-top: 10px;
+  word-spacing: 2px;
+}
+
+.reply {
+  width: Min(95%, 750px);
+  min-height: 100px;
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reply__border {
+  width: 5px;
+  min-height: 100%;
+  background-color: #c3c4ef;
+  margin: 20px 35px;
+}
+
+.reply__width--width {
+  width: 100%;
+}
+
+.reply__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.reply__profile__replying {
+  width: 100%;
+}
+
+.reply__profile__replying__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.reply__profile__replying__img__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reply__profile__replying__img__information > div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.reply__profile__replying__img__information > div img {
+  max-width: 100%;
+  height: auto;
+}
+
+.reply__profile__replying__img__information span:nth-child(2) {
+  display: inline-block;
+  margin-inline: 10px;
+  color: #324152;
+  font-weight: 700;
+}
+
+.reply__profile__replying__img__information span:nth-child(3) {
+  display: inline-block;
+  color: #67727e;
+  font-weight: 400;
+}
+
+.reply__profile__replying__img__information span:nth-child(4) {
+  display: inline-block;
+  color: #67727e;
+  font-weight: 400;
+}
+
+.reply__profile__replying__img__reply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5457b6;
+  font-weight: 700;
+  width: 67px;
+  cursor: pointer;
+}
+
+.reply__profile__replying .p span:nth-child(1) {
+  color: #5457b6;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.reply__profile__replying .p span:nth-child(2) {
+  display: inline;
+  color: #67727e;
+  word-spacing: 2px;
+}
+
+.crud {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.crud__delete, .crud__edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.crud__delete p, .crud__edit p {
+  margin-left: 10px;
+}
+
+.crud__delete p {
+  color: red;
+  font-weight: 400;
+}
+
+.crud__edit p {
+  color: #5457b6;
+  font-weight: 700;
+}
+
+.blocYou {
+  width: 40px;
+  height: 25px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5457b6;
+  color: white;
+}
+
+.content--margin {
+  margin-bottom: 10px;
+}
+
+.form__update {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: End;
+      -ms-flex-align: End;
+          align-items: End;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__update .textarea {
+  width: 100%;
+  resize: none;
+  height: 80px;
+}
+
+.form__update .textarea:focus {
+  outline: #5457b6 1px solid;
+}
+
+.form__update button {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90px;
+  height: 42px;
+  border-radius: 7px;
+  margin-top: 10px;
+  background-color: #5457b6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form__update button:hover {
+  background-color: #5154a1;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+  background-color: #f5f6fa;
+}
+
+.app__send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: Min(100%, 750px);
+  min-height: 150px;
+  margin: 0 auto 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.app__send__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.app__send__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app__send form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__send form textarea {
+  resize: none;
+  width: 100%;
+  height: 90px;
+  margin-inline: 15px;
+  padding: 10px;
+}
+
+.app__send form textarea:focus {
+  outline: #5457b6 1px solid;
+}
+
+.app__send form button {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 116px;
+  height: 42px;
+  border-radius: 8px;
+  background-color: #5457b6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.app__send form button:hover {
+  background-color: #5154a1;
+}
+
+.appComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: Min(95%, 750px);
+  margin: 0 auto 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.newComment {
+  width: Min(95%, 750px);
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  .appComment {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .appComment .profile__img__reply {
+    position: absolute;
+    bottom: 27px;
+    right: 22px;
+  }
+  .appComment .like {
+    width: 80px;
+    height: 33px;
+    margin-right: unset;
+    margin-top: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .appComment .like__increment {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reply__border {
+    margin: 0;
+  }
+  .reply__profile {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .reply__profile__replying__img .crud {
+    position: absolute;
+    bottom: 27px;
+    right: 22px;
+  }
+  .reply__profile .like {
+    width: 80px;
+    height: 33px;
+    margin-right: unset;
+    margin-top: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .reply__profile .like__increment {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reply__profile__replying__img__reply {
+    position: absolute;
+    bottom: 27px;
+    right: 22px;
+  }
+  .app__send {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .app__send__img {
+    margin-top: 20px;
+    margin-left: 3px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .app__send button {
+    position: absolute;
+    bottom: 27px;
+    right: 22px;
+  }
+}
+/*# sourceMappingURL=app.css.map */

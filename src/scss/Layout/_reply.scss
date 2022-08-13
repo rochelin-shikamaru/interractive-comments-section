@@ -1,0 +1,135 @@
+.reply{
+    //border: 1px solid red;
+    width: Min(95%, 750px);
+    min-height: 100px;
+    margin-inline: auto;
+    display: flex;
+
+    &__border{
+        width: 5px;
+        min-height: 100%;
+        background-color: $LightGrayishBlue;
+        margin: 20px 35px;
+    }
+    
+    &__width--width{
+        width: 100%;
+    }
+
+    &__profile{
+        display: flex;
+        width: 100%;
+        margin: 0 auto 20px auto;
+        background-color:  $White;
+        padding: 20px;
+        border-radius: 5px;
+
+        &__replying{
+            width: 100%;
+            &__img{
+                @include flexbox($justify: space-between);
+                width: 100%;
+               // border: 1px solid red;
+                &__information{
+                    @include flexbox;
+                  //  border: 1px solid red;
+                    & > div{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+
+                        img{
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+                    
+                    span:nth-child(2){
+                        display: inline-block;
+                        margin-inline: 10px;
+                        color: $DarkBlue;
+                        font-weight: $font-bold;
+                    }
+                    span:nth-child(3){
+                        display: inline-block;
+                        color: $GrayishBlue;
+                        font-weight: $font-regular;
+                    }
+                    span:nth-child(4){
+                        display: inline-block;
+                        color: $GrayishBlue;
+                        font-weight: $font-regular;
+                    }
+                    
+                    
+                }
+                &__reply{
+                  //  border: 1px solid green;
+                    @include flexbox($justify: space-between);
+                    color: $Moderateblue;
+                    font-weight: $font-bold;
+                    width: 67px;
+                    cursor: pointer;
+                }
+            }
+            .p{
+                
+                span:nth-child(1){
+                    color: $Moderateblue;
+                    font-weight: $font-bold;
+                    display: inline-block;
+                    margin-right: 5px;
+                    margin-top: 10px;
+                }
+                span:nth-child(2){
+                    display: inline;
+                    color: $GrayishBlue;
+                    word-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+// classname crud
+
+.crud{
+    width: 150px;
+    @include flexbox($justify: space-between);
+   // border: 1px solid red;
+
+    &__delete,&__edit{
+        @include flexbox;
+        cursor: pointer;
+        p{
+            margin-left: 10px;
+        }
+    }
+
+    &__delete p{
+        color: red;
+        font-weight: $font-regular;
+    }
+
+    &__edit p{
+        color: $Moderateblue;
+        font-weight: $font-bold;
+    }
+
+}
+
+// classname bloc you 
+
+.blocYou{
+    width: 40px;
+    height: 25px;
+    margin-right: 10px;
+    @include flexbox;
+    background-color: $Moderateblue;
+    color: $White;
+}
+
+
+.content--margin{
+    margin-bottom: 10px;
+}

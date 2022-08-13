@@ -1,0 +1,49 @@
+.profile{
+    //border: 1px solid red;
+    width: 100%;
+
+    &__img{
+        width: 100%;
+       // border: 1px solid yellow;
+        @include flexbox ($justify: space-between);
+        
+        &__information{
+            @include flexbox;
+           // border: 1px solid black;
+
+            .username{
+                display: inline-block;
+                font-weight: $font-bold;
+                margin-inline: 10px;
+                color: $DarkBlue;
+            }
+            .image{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            .timePost{
+                font-weight: $font-regular;
+                color: $GrayishBlue;
+            }
+        }
+        &__reply{
+           // border: 1px solid green;
+            @include flexbox($justify: space-between);
+            color: $Moderateblue;
+            font-weight: $font-bold;
+            width: 67px;
+            cursor: pointer;
+
+        }
+    }
+    .content{
+        color: $GrayishBlue;
+        margin-top: 10px;
+        word-spacing: 2px;
+    }
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+@import './/Utils/variables';
+@import './Utils/mixins';
+
+@import './Base/reset';
+
+@import './Layout/like';
+@import './Layout/profile';
+@import './Layout//reply';
+@import './Layout/update';
+
+.app{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    background-color: $VeryLightGray;
+
+    &__send{
+        display: flex;
+        width: Min(100%, 750px);
+        min-height: 150px;
+        margin: 0 auto 20px auto;
+        background-color:  $White;
+        padding: 20px;
+        border-radius: 5px;
+        &__img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        form{
+            width: 100%;
+            display: flex;
+            textarea{
+                resize: none;
+                width: 100%; 
+                height: 90px;
+                margin-inline: 15px;
+                padding: 10px;
+                
+                &:focus{
+                    outline: #5457b6 1px solid ;
+                }
+            }
+            button{
+                border: none;
+                @include flexbox;
+                width: 116px;
+                height: 42px;
+                border-radius: 8px;
+                background-color: $Moderateblue;
+                color: $White;
+                font-weight: $font-medium;
+                cursor: pointer;
+                &:hover{
+                    background-color: #5154a1;
+                }
+            }
+        }
+    }
+}
+.appComment{
+    display: flex;
+    width: Min(95%, 750px);
+    margin: 0 auto 20px auto;
+    background-color:  $White;
+    padding: 20px;
+    border-radius: 5px;
+}
+.newComment{
+    width: Min(95%, 750px);
+    margin-inline: auto;
+}
+
+/// media queries
+
+@media screen and (max-width: 768px) {
+
+    html{
+        font-size: 15px;
+    }
+    // two first comment
+    .appComment{
+        position: relative;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+
+
+        .profile__img__reply{
+            position: absolute;
+            bottom: 27px;
+            right: 22px;
+        }
+        .like{
+            width: 80px;
+            height: 33px;
+            margin-right: unset;
+            margin-top: 20px;
+            flex-direction: row;
+            justify-content: space-around;
+            &__increment{
+                height: 100%;
+                @include flexbox;
+            }
+        }
+    }
+    // reply comment
+
+    .reply{
+        &__border{
+            margin: 0 ;
+        }
+        &__profile{
+            position: relative;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            &__replying__img{
+                .crud{
+                    position: absolute;
+                    bottom: 27px;
+                    right: 22px;
+                }
+            }
+            .like{
+                width: 80px;
+                height: 33px;
+                margin-right: unset;
+                margin-top: 20px;
+                flex-direction: row;
+                justify-content: space-around;
+                &__increment{
+                    height: 100%;
+                    @include flexbox;
+                }
+
+            }
+
+            &__replying__img__reply{
+                position: absolute;
+                bottom: 27px;
+                right: 22px;
+            }
+        }
+    }
+
+    // send comment
+
+    .app__send{
+            position: relative;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            &__img{
+                margin-top: 20px;
+                margin-left: 3px;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            button{
+                position: absolute;
+                bottom: 27px;
+                right: 22px;
+            }
+    }
+
+    // when you finish to send a new coment
+
+
+}
