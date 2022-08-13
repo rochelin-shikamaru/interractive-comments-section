@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/rochelin-shikamaru/interractive-comments-section](https://github.com/rochelin-shikamaru/interractive-comments-section)
-- Live Site URL: [https://Interactive-comments-section.netlify.app](https://Interactive-comments-section.netlify.app)
+- Live Site URL: [https://comments-interrative.netlify.app](https://comments-interrative.netlify.app)
 
 ## My process
 
